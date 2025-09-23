@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PREMIER COMPUTERS - CART</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-page="cart">
+  <!-- Header -->
+  <header>
+    <div class="logo"><a href="index.html">PREMIER COMPUTERS</a></div>
+    <nav class="desktop-nav">
+      <a href="shop.html?cat=All" data-cat="All">ALL</a>
+    <a href="shop.html?cat=Printers" data-cat="Printers">PRINTERS</a>
+    <a href="shop.html?cat=Cables" data-cat="Cables">CABLES</a>
+    <a href="shop.html?cat=Accessories" data-cat="Accessories">ACCESSORIES</a>
+    </nav>
+    <div class="header-actions">
+      <a class="cart-btn" id="cart-btn" href="cart.html">Cart (0)</a>
+      <div class="hamburger" id="hamburger">☰</div>
+    </div>
+  </header>
+
+  <!-- Sidebar + Overlay -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="close-btn" id="close-sidebar">×</span>
+    </div>
+    <a href="shop.html?cat=All" data-cat="All">ALL</a>
+    <a href="shop.html?cat=Printers" data-cat="Printers">PRINTERS</a>
+    <a href="shop.html?cat=Cables" data-cat="Cables">CABLES</a>
+    <a href="shop.html?cat=Accessories" data-cat="Accessories">ACCESSORIES</a>
+  </aside>
+
+  <section class="section">
+    <h1>Your Cart</h1>
+    <div id="cart-empty" class="muted" style="display:none;">Your cart is empty.</div>
+    <div class="cart-grid">
+      <div>
+        <div id="cart-items"></div>
+      </div>
+      <aside class="summary">
+        <h3>Summary</h3>
+        <div class="summary-row"><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+        <div class="summary-row"><span>Shipping</span><strong>Based on Location</strong></div>
+        <div class="summary-row total"><span>Total</span><strong id="total">$0.00</strong></div>
+        <hr class="divider"/>
+        <form id="checkout-form" class="checkout-form">
+          <label>Full Name<input required id="name" type="text" placeholder="Name"/></label>
+          <label>Contact (Phone or Email)<input required id="contact" type="text" placeholder="Contact or Email"/></label>
+          <label>Address<textarea required id="address" placeholder="Delivery Location"></textarea></label>
+          <button type="submit" class="primary-btn">Place Order via WhatsApp</button>
+          <small class="muted">You'll be redirected to WhatsApp with your order details.</small>
+        </form>
+      </aside>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

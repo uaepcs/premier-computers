@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PREMIER COMPUTERS - SHOP</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-page="shop">
+  <!-- Header -->
+  <header>
+    <div class="logo"><a href="index.html">PREMIER COMPUTERS</a></div>
+    <nav class="desktop-nav">
+      <a href="shop.html?cat=All" data-cat="All">ALL</a>
+    <a href="shop.html?cat=Printers" data-cat="Printers">PRINTERS</a>
+    <a href="shop.html?cat=Cables" data-cat="Cables">CABLES</a>
+    <a href="shop.html?cat=Accessories" data-cat="Accessories">ACCESSORIES</a>
+    </nav>
+    <div class="header-actions">
+      <a class="cart-btn" id="cart-btn" href="cart.html">Cart (0)</a>
+      <div class="hamburger" id="hamburger">☰</div>
+    </div>
+  </header>
+
+  <!-- Sidebar + Overlay -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="close-btn" id="close-sidebar">×</span>
+    </div>
+    <a href="shop.html?cat=All" data-cat="All">ALL</a>
+    <a href="shop.html?cat=Printers" data-cat="Printers">PRINTERS</a>
+    <a href="shop.html?cat=Cables" data-cat="Cables">CABLES</a>
+    <a href="shop.html?cat=Accessories" data-cat="Accessories">ACCESSORIES</a>
+  </aside>
+
+  <!-- Shop header -->
+  <section class="shop-hero">
+    <h1 id="shop-title">Shop</h1>
+    <p class="muted">Pick a category or browse all products.</p>
+  </section>
+
+  <!-- Filters -->
+  <section class="filters">
+    <div class="chips" id="category-chips">
+      <!-- populated by JS (unique categories from sheet) -->
+    </div>
+    <input id="search" class="search" placeholder="Search products..." />
+  </section>
+
+  <!-- Products -->
+  <section class="section">
+    <div class="products" id="shop-products"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

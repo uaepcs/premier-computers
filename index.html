@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PREMIER COMPUTERS - HOME</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-page="home">
+  <!-- Header -->
+  <header>
+    <div class="logo"><a href="index.html">PREMIER COMPUTERS</a></div>
+    <nav class="desktop-nav">
+      <a href="shop.html?cat=All" data-cat="All">ALL</a>
+    <a href="shop.html?cat=Printers" data-cat="Printers">PRINTERS</a>
+    <a href="shop.html?cat=Cables" data-cat="Cables">CABLES</a>
+    <a href="shop.html?cat=Accessories" data-cat="Accessories">ACCESSORIES</a>
+    </nav>
+    <div class="header-actions">
+      <a class="cart-btn" id="cart-btn" href="cart.html">Cart (0)</a>
+      <div class="hamburger" id="hamburger">☰</div>
+    </div>
+  </header>
+
+  <!-- Sidebar + Overlay -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="close-btn" id="close-sidebar">×</span>
+    </div>
+    <a href="shop.html?cat=All" data-cat="All">ALL</a>
+    <a href="shop.html?cat=Printers" data-cat="Printers">PRINTERS</a>
+    <a href="shop.html?cat=Cables" data-cat="Cables">CABLES</a>
+    <a href="shop.html?cat=Accessories" data-cat="Accessories">ACCESSORIES</a>
+  </aside>
+ 
+  <!-- Banner -->
+  <section class="banner">
+    <div class="banner-inner">
+      <h1>🚀 PREMIER COMPUTERS LLC - YOUR BEST IT PARTNER</h1>
+      <p>Get all your IT requirements.</p>
+      <a class="primary-btn" href="shop.html?cat=All">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section">
+    <div class="section-head">
+      <h2>Featured</h2>
+      <a class="link" href="shop.html?cat=All">View all →</a>
+    </div>
+    <div class="products" id="featured-products"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
