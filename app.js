@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     await sendWhatsAppOrder(order);
-    alert("Order sent to WhatsApp!");
+    alert("Your Order is Placed");
   });
 });
 
@@ -428,3 +428,4 @@ document.addEventListener('DOMContentLoaded', ()=>{
   // if(page==='cart'){ renderCart(); setupCheckout(); }
   if(page==='cart'){ renderCart();  }
 });
+
